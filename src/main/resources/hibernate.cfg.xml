@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mongo://localhost:27017/JDBC_Tutorial</property>
+        <property name="connection.driver_class">mongodb.jdbc.MongoDriver</property>
+        <property name="connection.username">denis</property>
+        <property name="connection.password">denis</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="com.hibernate.mongodb.tutorial/City.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

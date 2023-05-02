@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping>
+    <class name="com.hibernate.mongodb.tutorial.City" table="cities">
+        <id name="_id" column="_id" type="string"/>
+        <property name="name" column="name" type="string"/>
+        <property name="population" column="population" type="int"/>
+        <property name="budget" column="budget" type="double"/>
+    </class>
+</hibernate-mapping>
